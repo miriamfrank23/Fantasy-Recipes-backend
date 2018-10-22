@@ -5,3 +5,39 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Start Seeding"
+
+World.create(name: "Star Wars", image: "", banner: "")
+World.create(name: "Harry Potter", image: "", banner: "")
+World.create(name: "The Lord of the Rings", image: "", banner: "")
+
+Recipe.create(name: "Death Star Cookies", image: "", instructions: "cook stuff", world_id: 1)
+Recipe.create(name: "Magic Wand Petzel Sticks", image: "", instructions: "cook stuff", world_id: 2)
+Recipe.create(name: "Snape's Soup", image: "", instructions: "cook stuff", world_id: 2)
+Recipe.create(name: "Balrog's Firey Chili", image: "", instructions: "cook stuff", world_id: 3)
+
+Ingredient.create(name: "Chocolate", quantity: "2 cups Chocolate", recipe_id: 1)
+Ingredient.create(name: "Dough", quantity: "2 cups Dough", recipe_id: 1)
+Ingredient.create(name: "Pretzel", quantity: "Bag of Sticks", recipe_id: 2)
+Ingredient.create(name: "Salt", quantity: "Dash of Salt", recipe_id: 2)
+Ingredient.create(name: "Bone Broth", quantity: "1 Liter", recipe_id: 3)
+Ingredient.create(name: "Ground Beef", quantity: "1 lb.", recipe_id: 4)
+
+Rating.create(score: true, recipe_id: 1)
+Rating.create(score: true, recipe_id: 1)
+Rating.create(score: false, recipe_id: 1)
+Rating.create(score: true, recipe_id: 2)
+Rating.create(score: false, recipe_id: 2)
+Rating.create(score: false, recipe_id: 2)
+Rating.create(score: true, recipe_id: 3)
+Rating.create(score: true, recipe_id: 3)
+Rating.create(score: false, recipe_id: 3)
+Rating.create(score: true, recipe_id: 4)
+Rating.create(score: true, recipe_id: 4)
+Rating.create(score: true, recipe_id: 4)
+Rating.create(score: true, recipe_id: 5)
+Rating.create(score: false, recipe_id: 5)
+Rating.create(score: true, recipe_id: 5)
+
+puts "End Seeding"
