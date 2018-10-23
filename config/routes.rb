@@ -5,7 +5,7 @@ Rails.application.routes.draw do
       namespace :v1 do
         resources :worlds, only: :index
         resources :recipes, only: :index
-        resources :ratings, only: :create
+        resources :ratings, only: [:create, :index]
       end
     end
   end
