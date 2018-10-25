@@ -29,11 +29,12 @@ Recipe.create(name: "Cockroach Clusters", image: "https://i.imgur.com/UMFliH7.jp
 puts "End Seed Harry Potter Recipes"
 puts "Start Seed Lord of the Rings Recipes"
 
-Recipe.create(name: "Eye of Sauron Cake Pops", image: "https://i.imgur.com/vb56JSZ.jpg", instructions: "cook stuff", world_id: 3)
-Recipe.create(name: "Gondor Cookie Pops", image: "https://i.imgur.com/tIsjJAz.jpg", instructions: "cook stuff", world_id: 3)
-Recipe.create(name: "Lembas Bread", image: "https://i.imgur.com/hO46jEX.jpg", instructions: "cook stuff", world_id: 3)
-Recipe.create(name: "Assorted Cookies", image: "https://i.imgur.com/RyIsH9r.jpg", instructions: "cook stuff", world_id: 3)
-Recipe.create(name: "Bag End Cupcakes", image: "https://i.imgur.com/92f55rU.jpg", instructions: "cook stuff", world_id: 3)
+Recipe.create(name: "Eye of Sauron Cake Pops", image: "https://i.imgur.com/vb56JSZ.jpg", instructions: "Prepare a boxed cake mix as directed on the box. Crumble the cake into fine crumbs with your hands in a large bowl. Mix in about 1/3 cup of icing with your hands. Scoop out the mixture using cookie scoop, packing the cake mixture into the scoop as you scoop it. Smush the mixture in your hand to pack it tightly into a ball. Put about 5 Candy Melt morsels into microwaveable bowl and melt them in the microwave. Dip your cake pop stick into the melted Candy Melt and quickly stick it into a cake pop at least half way down. Set pops on a cookie tray. Freeze for about 15 minutes. Put Candy Melts into a microwaveable mug. Melt the Candy Melts as directed on the package. Dip the cake pop into the mug, evenly coating it. Let the coating drip off. Place cake pop on cookie sheet.", world_id: 3)
+Recipe.create(name: "Tree of Gondor Cereal Treats", image: "https://i.imgur.com/tIsjJAz.jpg", instructions: "In large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat. Stir in food coloring, if desired. Add Rice Krispies cereal. Stir until well coated. Using 1/2-cup measuring cup coated with cooking spray divide warm cereal mixture into portions. Using buttered hands shape each portion into ball. Cool. Insert wooden stick, if desired. Decorate, if desired. Let stand until firm.", world_id: 3)
+Recipe.create(name: "Lembas Bread", image: "https://i.imgur.com/hO46jEX.jpg", instructions: "Preheat oven to 325 degrees. Cream together the butter and sugar or honey. Add the flour and mix until thoroughly incorporated. Put out on suitable surface and knead until quite smooth, about 5 minutes, adding a bit of flour if necessary to keep dough from sticking. Roll out to about ¼ inch thickness and cut into 3 to 4 inch squares, scoring with a knife halfway through each square with a butter knife. Place on buttered cookie sheet and bake for about 20 to 25 minutes, or until lightly golden brown", world_id: 3)
+Recipe.create(name: "LOTR Cookies", image: "https://i.imgur.com/RyIsH9r.jpg", instructions: "Preheat oven to 350° F.
+In the bowl of your mixer cream butter and sugar until smooth, at least 3 minutes. Beat in extracts and egg. In a separate bowl combine baking powder and salt  with flour and add a little at a time to the wet ingredients. The dough will be very stiff. If it becomes too stiff for your mixer turn out the dough onto a countertop surface. Wet your hands and finish off kneading the dough by hand. Divide into workable batches, roll out onto a floured surface and cut. You want these cookies to be on the thicker side (closer to 1/4 inch rather than 1/8). Bake at 350 for 6-8 minutes. Let cool on the cookie sheet until firm enough to transfer to a cooling rack.", world_id: 3)
+Recipe.create(name: "Bag End Cupcakes", image: "https://i.imgur.com/92f55rU.jpg", instructions: "Preheat oven to 350 degrees. Line 12-cup standard muffin tin with paper liners. Into a medium bowl, sift together cocoa, flour, baking powder, and salt; set aside. In a mixing bowl, cream butter and sugar until light and fluffy. Add eggs, one at a time, beating well after each, then beat in vanilla. With mixer on low speed, add flour mixture in two batches, alternating with sour cream and beginning and ending with flour. Pour batter into cups, filling each 3/4 full. Bake until a toothpick inserted in centers comes out clean, 20 to 25 minutes.", world_id: 3)
 
 puts "End Seed Lord of the Rings Recipes"
 puts "Start Seed Ingredients"
@@ -92,8 +93,6 @@ Ingredient.create(name: "", quantity: "1 Tub of Frosting", recipe_id: 7)
 Ingredient.create(name: "", quantity: "1 Package of Soft Candy Caramels", recipe_id: 7)
 
 
-
-
 Ingredient.create(name: "", quantity: "1 and 1/2 Cups Butterscotch Pudding", recipe_id: 8)
 Ingredient.create(name: "", quantity: "2 Eggs", recipe_id: 8)
 Ingredient.create(name: "", quantity: "1 Package Yellow Cake Mix", recipe_id: 8)
@@ -104,6 +103,10 @@ Ingredient.create(name: "", quantity: "2/3 Cups of Butter", recipe_id: 9)
 Ingredient.create(name: "", quantity: "1 and 2/3 Cups of Sugar", recipe_id: 9)
 Ingredient.create(name: "", quantity: "3 Eggs", recipe_id: 9)
 Ingredient.create(name: "", quantity: "2 Cups Flour", recipe_id: 9)
+Ingredient.create(name: "", quantity: "2/3 Cup Baking Cocoa", recipe_id: 9)
+Ingredient.create(name: "", quantity: "1 and 1/4 Teaspoons Baking Soda", recipe_id: 9)
+Ingredient.create(name: "", quantity: "1 Teaspoon Salt", recipe_id: 9)
+Ingredient.create(name: "", quantity: "1 and 1/3 Cups Milk", recipe_id: 9)
 
 
 Ingredient.create(name: "", quantity: "1/2 Cup Chocolate Chips", recipe_id: 10)
@@ -111,25 +114,40 @@ Ingredient.create(name: "", quantity: "1/4 Cup Butterscotch Chips", recipe_id: 1
 Ingredient.create(name: "", quantity: "1 1/2 Cup Dry Chow Mein Noodles", recipe_id: 10)
 
 
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 11)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 11)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 11)
+Ingredient.create(name: "", quantity: "Cake Mix and Ingredients Listed on the Box", recipe_id: 11)
+Ingredient.create(name: "", quantity: "Candy Melts", recipe_id: 11)
+Ingredient.create(name: "", quantity: "6 Inch Lollipop Sticks", recipe_id: 11)
+Ingredient.create(name: "", quantity: "1/3 Cup Icing", recipe_id: 11)
 
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 12)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 12)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 12)
 
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 13)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 13)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 13)
+Ingredient.create(name: "", quantity: "3 Tbsp Butter", recipe_id: 12)
+Ingredient.create(name: "", quantity: "1 Package Marshmallows", recipe_id: 12)
+Ingredient.create(name: "", quantity: "6 Cups Rice Krispies", recipe_id: 12)
 
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 14)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 14)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 14)
 
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 15)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 15)
-Ingredient.create(name: "", quantity: "Bag of Sticks", recipe_id: 15)
+Ingredient.create(name: "", quantity: "1 Cup Butter", recipe_id: 13)
+Ingredient.create(name: "", quantity: "1/2 Cup Brown Sugar or 1/4 Cup Honey", recipe_id: 13)
+Ingredient.create(name: "", quantity: "2 Cups Flour", recipe_id: 13)
+
+
+Ingredient.create(name: "", quantity: "1 Cup Butter", recipe_id: 14)
+Ingredient.create(name: "", quantity: "1 Cup Sugar", recipe_id: 14)
+Ingredient.create(name: "", quantity: "1 tsp Vanilla Extract", recipe_id: 14)
+Ingredient.create(name: "", quantity: "1 tsp Almond Extract", recipe_id: 14)
+Ingredient.create(name: "", quantity: "1 Egg", recipe_id: 14)
+Ingredient.create(name: "", quantity: "2 tsp Baking Powder", recipe_id: 14)
+Ingredient.create(name: "", quantity: "1/2 tsp Salt", recipe_id: 14)
+Ingredient.create(name: "", quantity: "3 Cups Flour", recipe_id: 14)
+
+
+Ingredient.create(name: "", quantity: "3/4 Cup Cocoa Powder", recipe_id: 15)
+Ingredient.create(name: "", quantity: "3/4 Cup Flour", recipe_id: 15)
+Ingredient.create(name: "", quantity: "3 Eggs", recipe_id: 15)
+Ingredient.create(name: "", quantity: "1/2 tsp Baking Powder", recipe_id: 15)
+Ingredient.create(name: "", quantity: "1/4 tsp Salt", recipe_id: 15)
+Ingredient.create(name: "", quantity: "1 Cup Sugar", recipe_id: 15)
+Ingredient.create(name: "", quantity: "1 tsp Vanilla Extract", recipe_id: 15)
+Ingredient.create(name: "", quantity: "3/4 Cup Butter", recipe_id: 15)
 
 
 puts "End Seed Ingredients"
