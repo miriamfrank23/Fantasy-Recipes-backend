@@ -8,9 +8,9 @@
 
 puts "Start Seeding"
 
-World.create(name: "Star Wars", image: "", banner: "")
-World.create(name: "Harry Potter", image: "", banner: "")
-World.create(name: "The Lord of the Rings", image: "", banner: "")
+World.create(name: "Star Wars", image: "", banner: "", clicks: 1)
+World.create(name: "Harry Potter", image: "", banner: "", clicks: 1)
+World.create(name: "The Lord of the Rings", image: "", banner: "", clicks: 1)
 
 Recipe.create(name: "Death Star Cookies", image: "https://i.imgur.com/XhQCQu3.jpg", instructions: "cook stuff", world_id: 1)
 Recipe.create(name: "Magic Wand Petzel Sticks", image: "https://i.imgur.com/bIgrVI1.jpg", instructions: "cook stuff", world_id: 2)

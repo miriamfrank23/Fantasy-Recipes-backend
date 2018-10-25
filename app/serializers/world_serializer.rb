@@ -1,5 +1,5 @@
 class WorldSerializer < ActiveModel::Serializer
-  attributes :id, :name, :image, :banner
+  attributes :id, :name, :image, :banner, :clicks
   has_many :recipes
 
   class RecipeSerializer < ActiveModel::Serializer
