@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   Rails.application.routes.draw do
     namespace :api do
       namespace :v1 do
-        resources :worlds, :recipes
+        resources :worlds, only: [:index, :show, :update]
+        resources :recipes, only: :index
+        resources :ratings, only: [:create, :index]
       end
     end
   end
